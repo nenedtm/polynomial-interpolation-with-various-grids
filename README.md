@@ -88,7 +88,6 @@ where the Lagrange polynomials $L_i(x)$ are:
 $$L_i(x) = \prod_{\substack{j=0 \\ j \neq i}}^{n} \frac{x - x_j}{x_i - x_j}$$
 
 Each $L_i(x)$ equals 1 at $x_i$ and 0 at all other $x_j$ with $j \neq i$, ensuring that $P(x_i) = y_i$.
-```
 
 ### Gauss-Lobatto Nodes
 

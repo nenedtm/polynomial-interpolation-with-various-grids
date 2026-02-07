@@ -43,17 +43,16 @@ The script will prompt you to enter:
 
 Functions that highlight the differences between the two grids:
 
-```python
+
 # Runge's function (shows strong Runge phenomenon with equidistant nodes)
 $$f(x) = \frac{1}{1 + 25x^2}$$
-```
+
 
 # Oscillating function
-f(x) = np.sin(10*x)
+$$f(x) = \sin(10x)$$
 
 # Polynomial function
-f(x) = x**3 - 2*x**2 + x
-```
+$$f(x) = x^3 - 2x^2 + x$$
 
 ## Output
 
@@ -80,29 +79,26 @@ The program generates:
 
 The interpolating polynomial is defined as:
 
-```
-P(x) = Σ(i=0 to n) yi · Li(x)
-```
+$$P(x) = \sum_{i=0}^{n} y_i \cdot L_i(x)$$
 
-where the Lagrange polynomials Li(x) are:
+where the Lagrange polynomials $L_i(x)$ are:
 
-```
-Li(x) = Π(j=0 to n, j≠i) (x - xj)/(xi - xj)
+$$L_i(x) = \prod_{\substack{j=0 \\ j \neq i}}^{n} \frac{x - x_j}{x_i - x_j}$$
+
+Each $L_i(x)$ equals 1 at $x_i$ and 0 at all other $x_j$ with $j \neq i$, ensuring that $P(x_i) = y_i$.
 ```
 
 ### Gauss-Lobatto Nodes
 
-The nodes are calculated as:
+The nodes are initially calculated on the standard interval $[-1, 1]$ using:
 
-```
-xj = -cos(πj/n),  j = 0, ..., n    (on [-1, 1])
-```
+$$x_j = -\cos\left(\frac{\pi j}{n}\right), \quad j = 0, \ldots, n$$
 
-and then transformed to the interval [a, b] via:
+These nodes always include the endpoints $-1$ and $1$.
 
-```
-xj^[a,b] = ((b-a)/2)·xj + (a+b)/2
-```
+They are then transformed to the desired interval $[a, b]$ via affine mapping:
+
+$$x_j^{[a,b]} = \frac{b - a}{2} x_j + \frac{a + b}{2}$$
 
 ## Example: CO2 Emissions
 

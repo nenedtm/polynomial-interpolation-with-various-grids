@@ -1,4 +1,4 @@
-# Polynomial Interpolation: Equidistant vs Gauss-Lobatto Nodes
+# Polynomial Interpolation: Equidistant 📉 vs Gauss-Lobatto Nodes 📈
 
 This project implements Lagrange polynomial interpolation using two different node grids:
 
@@ -46,6 +46,7 @@ Functions that highlight the differences between the two grids:
 ```python
 # Runge's function (shows strong Runge phenomenon with equidistant nodes)
 f(x) = 1 / (1 + 25*x²)
+```
 
 # Oscillating function
 f(x) = np.sin(10*x)

@@ -46,6 +46,7 @@ Functions that highlight the differences between the two grids:
 
 #### Runge's function 
 (shows strong Runge phenomenon with equidistant nodes)
+
 $$f(x) = \frac{1}{1 + 25x^2}$$
 
 

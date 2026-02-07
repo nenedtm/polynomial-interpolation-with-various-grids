@@ -44,14 +44,15 @@ The script will prompt you to enter:
 Functions that highlight the differences between the two grids:
 
 
-### Runge's function (shows strong Runge phenomenon with equidistant nodes)
+#### Runge's function 
+(shows strong Runge phenomenon with equidistant nodes)
 $$f(x) = \frac{1}{1 + 25x^2}$$
 
 
-### Oscillating function
+#### Oscillating function
 $$f(x) = \sin(10x)$$
 
-### Polynomial function
+#### Polynomial function
 $$f(x) = x^3 - 2x^2 + x$$
 
 ## Output

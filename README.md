@@ -6,7 +6,7 @@ This project implements Lagrange polynomial interpolation using two different no
   
 - **Gauss-Lobatto Nodes**: non-uniformly distributed, concentrated more heavily at the interval endpoints. Reduces Runge's phenomenon and improves accuracy.
 
-## what will you find in the code?
+## What will you find in the code?
 
 - Interpolation of user-defined mathematical functions
 - Interpolation of real datasets (example: CO2 emissions)

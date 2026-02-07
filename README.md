@@ -45,7 +45,7 @@ Functions that highlight the differences between the two grids:
 
 ```python
 # Runge's function (shows strong Runge phenomenon with equidistant nodes)
-f(x) = 1 / (1 + 25*x²)
+$$f(x) = \frac{1}{1 + 25x^2}$$
 ```
 
 # Oscillating function

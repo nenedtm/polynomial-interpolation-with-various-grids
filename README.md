@@ -75,7 +75,7 @@ The program generates:
    - Behavior outside the interval [a, b]
    - Comparison of extrapolation errors
 
-## 📐 Theory
+##  Theory
 
 ### Lagrange Interpolation
 
